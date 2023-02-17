@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://housing.com/news/wp-content/uploads/2022/11/cafe-design-compressed-1.jpg");
+  min-height: 80%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 6pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Mystery<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."</p>
+    </div>
+    <img src="https://content.jdmagicbox.com/comp/gandhinagar-gujarat/a6/9999pxx79.xx79.200513171900.w1a6/catalogue/the-blue-oven-randesan-gandhinagar-gujarat-coffee-shops-s5w6vfzmle.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 75.00 Php</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 80.00 Php</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 75.00 Php</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 70.00 Php</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 60.00 Php</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 80.00 Php</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 85.00 Php</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 90.00 Php</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 50.00 Php</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 50.00 Php</p>
+    </div>  
+    <img src="data:image/jpeg;base64,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" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
